@@ -1,6 +1,8 @@
 # filterAlarms
 
 filterAlarms is an Iskratel PON utility program for generating Alarm Filters from the Alarm table in CLI.
+A typical example, shown, is where ports are activated but SFP modules are not present. This is common for the GE Ethernet ports (1/1-6) which are not critical to the operation of the PON. Since Ethernet ports 1/5 and 1/6 are combo SFP/Electrical, if no device is connected to the RJ45 interface, the "Ethernet link fault" alarm will display. Another common example is if the PON SFP is connected but has no active subscribers. This may mean there is no fiber connected to the SFP but it is inserted and active.
+Once these alarm filters are entered in the "diagnostics" menu, the Alarm will not show. It is important to remember to remove the Alarm Filter once a previously inactive port starts carrying services, else not use the filters at all.
 
 | Flag | Description |
 | ------ | ------ |
