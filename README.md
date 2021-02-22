@@ -10,8 +10,8 @@ Once these alarm filters are entered in the "diagnostics" menu, the Alarm will n
 | -i | File to read alarm entries from (default "alarmList.txt") |
 | -o | File to write alarm filters to (default "filterList.txt") |
 | -a | Overwrite entries if file exists (default false) |
-| -stdin | Read alarm entries from stdin |
-| -stdout | Write alarm filters to stdout |
+| -si | Read alarm entries from stdin |
+| -so | Write alarm filters to stdout |
 
 # Example Input
 ```sh
