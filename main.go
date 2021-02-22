@@ -14,8 +14,8 @@ import (
 var (
 	helpFlag = flag.Bool("h", false, "Show this help")
 	inFile = flag.String("i", "alarmList.txt", "File to read alarm entries from")
-	stdinFlag = flag.Bool("stdin", false, "Read alarm entries from stdin")
-	stdoutFlag = flag.Bool("stdout", false, "Write alarm filters to stdout")
+	stdinFlag = flag.Bool("si", false, "Read alarm entries from stdin")
+	stdoutFlag = flag.Bool("so", false, "Write alarm filters to stdout")
 	outFile = flag.String("o", "filterList.txt", "File to write alarm filters to")
 	appendFlag = flag.Bool("a", false, "Overwrite entries if file exists")
 	err error
